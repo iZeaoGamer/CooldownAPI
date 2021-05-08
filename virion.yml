@@ -1,0 +1,8 @@
+name: CooldownAPI
+description: An API for Cooldown.
+version: 1.0.0
+
+antigen: Zeao\cooldown
+api: [3.0.0]
+php: [8.0.0] 
+author: Zeao
