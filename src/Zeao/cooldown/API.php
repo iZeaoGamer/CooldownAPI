@@ -7,6 +7,8 @@ use pocketmine\Player;
 final class API{
 
     protected static array $cooldown = [];
+    
+    
 /** Returns if the cooldown for the user is active. Returns true if active, returns false if not.
  * @param Player $player 
  * @param int $time = 2 (Time you'd like the cooldown to be.)
@@ -16,7 +18,7 @@ static function hasCooldownTime(Player $player, int $time = 2): bool{
         return((time() - self::$cooldown[$player->getLowerCaseName()]) < $time);
 }
 
-/** Builds a itrm construction, and returns a useable value.
+/** Builds a item construction, and returns a useable value.
  * Return true if the item is useable. Returns false if the item cannot be used.
  * @param Player $player 
  * @param bool $reset = false (Returns whether or not the timer should be reset.)
