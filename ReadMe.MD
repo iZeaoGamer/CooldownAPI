@@ -45,7 +45,7 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerInteractEvent; //our main cause of interaction spams.
 class ClassListener implements Listener{
 
-public Plugin $pluginClass;
+public Plugin $plugin;
     public function __construct(Plugin $pluginClass){
         $this->plugin = $pluginClass;
 
