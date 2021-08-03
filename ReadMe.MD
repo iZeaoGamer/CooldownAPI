@@ -74,12 +74,12 @@ If it returns false, it won't reset the timer.
 
 If you want to add it in the same class, you've gotta add 
 ```php
-if(API::canUseItem(GalacticPlayer $player)){ 
+if(API::canUseItem(Player $player)){ 
 ```
 
 Because the last function actually counts after the first one, you will need to use:
 ```php 
-if(API::canUseItem(GalacticPlayer $player, true)){
+if(API::canUseItem(Player $player, true)){
 
 ```
 
